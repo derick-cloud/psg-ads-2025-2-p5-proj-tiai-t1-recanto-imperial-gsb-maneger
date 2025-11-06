@@ -1,0 +1,163 @@
+/* === Fundo e Reset === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+body {
+  background-image: url("/fundo.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #3a2a1a;
+}
+
+/* === Header === */
+.recanto-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(245, 230, 200, 0.85);
+  padding: 15px 25px;
+  border-bottom: 3px solid #5a3a1a;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 80px;
+  border-radius: 50%;
+}
+
+.header-left h1 {
+  font-size: 1.4rem;
+  color: #513315;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.header-left h2 {
+  font-size: 1rem;
+  color: #333;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.menu button {
+  background-image: url("/madeira.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: none;
+  padding: 8px 15px;
+  color: #3a2a1a;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: 'Stencil Std', 'Impact', sans-serif;
+  text-shadow: 1px 1px #f9e4c5;
+  transition: transform 0.1s ease;
+}
+
+.menu button:hover {
+  transform: scale(1.05);
+}
+
+.header-right img {
+  width: 40px;
+  margin-left: 10px;
+}
+
+/* === Cards === */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #fff7e9;
+  border-radius: 20px;
+  width: 300px;
+  height: 180px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  padding: 15px;
+}
+
+.card img {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 3rem;
+  color: #5a3a1a;
+  font-family: 'Stencil Std', sans-serif;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #5a3a1a;
+  letter-spacing: 1px;
+  margin-top: 5px;
+}
+
+/* === Eventos === */
+.eventos {
+  background-color: rgba(255, 247, 233, 0.95);
+  margin: 40px auto;
+  width: 85%;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.eventos h3 {
+  font-family: 'Stencil Std', sans-serif;
+  color: #3a2a1a;
+  margin-bottom: 20px;
+}
+
+.evento {
+  background-color: #f7e4b1;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+}
+
+.evento h4 {
+  font-family: 'Stencil Std', sans-serif;
+  font-size: 1rem;
+}
+
+.evento .tipo {
+  font-weight: bold;
+}
+
+.tipo.nascimento {
+  color: #7a4f0e;
+}
+
+.tipo.venda {
+  color: #91440e;
+}
+
+.data {
+  float: right;
+  color: #3a2a1a;
+}
+
+.evento p {
+  font-size: 0.9rem;
+  color: #3a2a1a;
+}
